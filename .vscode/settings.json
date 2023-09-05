@@ -1,0 +1,84 @@
+{
+  // editor settings
+  "editor.fontFamily": "VictorMono Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": false,
+  "editor.formatOnType": true,
+  "editor.glyphMargin": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "all",
+  "editor.scrollBeyondLastLine": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+
+  // explorer settings
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+
+  // file settings
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    ".env*": "makefile"
+  },
+
+  // terminal
+  "terminal.integrated.fontFamily": "Victor Mono",
+  "terminal.integrated.fontSize": 16,
+
+  // workbench settings
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+
+  // window
+  "window.title": "${dirty}${separator}${activeFolderMedium}${separator}${activeEditorShort}",
+
+  // extensions
+  "prettier.printWidth": 80,
+  "prettier.singleQuote": true,
+
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.rulers": [120]
+  },
+
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
