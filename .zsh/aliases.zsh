@@ -10,7 +10,7 @@ alias zshsource="source ~/.zshrc"
 
 # user commands
 alias grep='grep --color'
-alias ls="exa --icons --group-directories-first"
-alias ll="exa --icons --group-directories-first --long --header -l"
+alias ls="exa --icons --group-directories-first -F -H"
+alias ll="exa --icons --group-directories-first --long --header -alF"
 alias tree="exa --icons --group-directories-first --long --header -T"
 
