@@ -1,8 +1,16 @@
-# dotFiles
-This repository contains my personal config files terminal, IDEs, git, etc...
+# dotfiles
+This repository contains my config files for git, terminal, IDEs and etc...
 
-## Tools
+## 1. Requirements
 
+### 1.1 Homebrew
+Ensure [Homebrew](https://brew.sh/) is installed on the machine.
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### 1.2 CLI Tools
+Use homebrew to install the cli tools.
 ```
 brew install \
   commitzen \
@@ -12,11 +20,12 @@ brew install \
   iperf3 \
   jq \
   starship \
+  stow \
   wget
 ```
 
-## Apps
-
+### 1.3 Apps
+Use homebrew to install apps.
 ```
 brew install --cask \
   android-studio \
@@ -40,8 +49,8 @@ brew install --cask \
   vlc
 ```
 
-## Fonts
-
+### 1.4 Fonts
+Install nerd fonts.
 ```
 brew tap homebrew/cask-fonts
 brew install --cask \
@@ -52,13 +61,25 @@ brew install --cask \
   font-victor-mono-nerd-font
 ```
 
-
-## Extras
-
+### 1.5 Extras
+Install extra CLI tools.
 ```
 brew tap heroku/brew
 brew install heroku
 
 brew tap teamookla/speedtest
 brew install speedtest
+```
+
+## 2. Installation
+
+Clone the git repository to your home directory:
+```
+git clone https://github.com/diego-ch/dotfiles.git ~/.dotfiles
+```
+
+then use STOW to create the symlinks:
+```
+cd ~/.dotfiles
+stow .
 ```
