@@ -1,18 +1,24 @@
 {
-  // editor settings
-  "editor.fontFamily": "VictorMono Nerd Font Mono",
+  // editor settings ==>
+  "editor.fontFamily": "VictorMono Nerd Font",
   "editor.fontLigatures": true,
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": false,
   "editor.formatOnType": true,
   "editor.glyphMargin": true,
+  "editor.largeFileOptimizations": false,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "none",
   "editor.renderLineHighlight": "all",
   "editor.scrollBeyondLastLine": true,
+  "editor.stickyScroll.enabled": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+
+  // ignore extension recommendations
+  "extensions.ignoreRecommendations": true,
+  "git.confirmSync": false,
 
   // explorer settings
   "explorer.confirmDragAndDrop": false,
@@ -26,16 +32,20 @@
   },
 
   // terminal
-  "terminal.integrated.fontFamily": "Victor Mono",
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "VictorMono Nerd Font",
+  "terminal.integrated.fontSize": 14,
 
   // workbench settings
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "Night Owl",
+  "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false,
 
   // window
-  "window.title": "${dirty}${separator}${activeFolderMedium}${separator}${activeEditorShort}",
+  // "window.title": "${dirty}${separator}${activeFolderMedium}${separator}${activeEditorShort}",
+  "window.title": "${dirty}${separator}${activeEditorMedium}",
+  "window.zoomLevel": 1,
 
   // extensions
   "prettier.printWidth": 80,
@@ -49,12 +59,16 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
 
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.html-language-features",
     "editor.rulers": [120]
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   "[javascript]": {
@@ -72,6 +86,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
   "[typescript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -79,6 +98,9 @@
 
   "[typescriptreact]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockercompose]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
