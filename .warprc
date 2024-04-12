@@ -3,6 +3,7 @@ flecto:~/Work/flecto
 flecto-be:~/Work/flecto/backend
 flecto-fe:~/Work/flecto/frontend
 porto-cti:~/Work/porto-cti
+repos:~/Work/porto-cti/repos
 dotfiles:~/Work/porto-cti/repos/dotfiles
 exercises:~/Work/porto-cti/repos/exercises
 ex-java:~/Work/porto-cti/repos/exercises/java
