@@ -28,6 +28,5 @@ ms-vscode.remote-server
 ms-vsliveshare.vsliveshare
 oderwat.indent-rainbow
 sdras.night-owl
-shopify.ruby-lsp
 tinkertrain.theme-panda
 vscode-icons-team.vscode-icons
