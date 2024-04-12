@@ -21,5 +21,4 @@ source $ZSH/oh-my-zsh.sh
 [[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
 [[ -f ~/.zsh/sdk.zsh ]] && source ~/.zsh/sdk.zsh
 
-echo
-neofetch
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
