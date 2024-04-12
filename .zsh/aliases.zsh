@@ -13,6 +13,7 @@ alias grep='grep --color'
 alias ls="exa --icons --group-directories-first -F -H"
 alias ll="exa --icons --group-directories-first --long --header -lF"
 alias tree="exa --icons --group-directories-first --long --header -T"
+alias t="tree -I '.git' -a"
 
 # flecto-aliases
 alias flecto-local="docker exec -it backend-backend-1 bash"
