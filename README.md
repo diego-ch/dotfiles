@@ -81,5 +81,5 @@ git clone https://github.com/diego-ch/dotfiles.git ~/.dotfiles
 then use STOW to create the symlinks:
 ```
 cd ~/.dotfiles
-stow .
+stow --adopt .
 ```
