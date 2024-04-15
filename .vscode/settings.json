@@ -50,6 +50,7 @@
   // extensions
   "prettier.printWidth": 80,
   "prettier.singleQuote": true,
+  "todo-tree.highlights.enabled": false,
 
   "[dart]": {
     "editor.formatOnSave": true,
