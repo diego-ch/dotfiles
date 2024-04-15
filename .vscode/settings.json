@@ -36,9 +36,9 @@
   "terminal.integrated.fontSize": 14,
 
   // workbench settings
-  "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.fontAliasing": "antialiased",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "catppuccin-mocha",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
 
