@@ -15,6 +15,10 @@ decorations = "Full"
 dynamic_title = true
 option_as_alt = "Both"
 
+[scrolling]
+history = 0
+multiplier = 3
+
 [colors]
 draw_bold_text_with_bright_colors = true
 
