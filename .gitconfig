@@ -1,16 +1,36 @@
-[init]
-	defaultBranch = main
-
 [user]
 	name = Diego Porto
 	email = diego.cfporto@gmail.com
 
+[init]
+	defaultBranch = main
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+
+[pull]
+	rebase = true
+
+[push]
+	default = simple
+
+[difftool]
+	prompt = false
+
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	c = commit
+	ca = commit -a
+	cm = commit -m
+	cam = commit -am
+	d = diff
+	dc = diff --cached
+	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-
