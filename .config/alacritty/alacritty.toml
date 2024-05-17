@@ -39,3 +39,7 @@ italic = { family = "VictorMono Nerd Font" }
 animation = "EaseOutExpo"
 color = '0xffffff'
 duration = 0
+
+[shell]
+program = "/bin/zsh"
+args = ["-l", "-c", "tmux"]
