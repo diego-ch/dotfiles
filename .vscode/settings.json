@@ -48,6 +48,7 @@
   "window.zoomLevel": 1,
 
   // extensions
+  "github.copilot.editor.enableAutoCompletions": true,
   "prettier.printWidth": 80,
   "prettier.singleQuote": true,
   "todo-tree.highlights.enabled": false,
@@ -101,7 +102,18 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
   "[dockercompose]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[ruby]": {
+    // "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.rulers": [120],
+    "editor.semanticHighlighting.enabled": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true
   }
 }
