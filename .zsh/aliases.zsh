@@ -21,3 +21,25 @@ alias lta="lt -aI .git"
 alias flecto-local="docker exec -it backend-backend-1 bash"
 alias flecto-prod="heroku run bash -a rnters-prod"
 alias flecto-staging="heroku run bash -a rnters-staging"
+
+# docker aliases
+alias dcctnrm='for docker_container in $(docker ps -aq); do docker rm -f $docker_container; done;'
+alias dcimgrm='for docker_image in $(docker images -aq); do docker rmi -f $docker_image; done;'
+alias dcvolrm='for docker_volume in $(docker volume ls -q); do docker volume rm $docker_volume; done;'
+
+dockerpurge() {
+    # show pre stats
+    docker system df
+    echo
+
+    # purge docker
+    dcctrm
+    dcimgrm
+    dcvolrm
+    docker network prune -f
+    docker system prune -af
+
+    # show post stats
+    echo
+    docker system df
+}
