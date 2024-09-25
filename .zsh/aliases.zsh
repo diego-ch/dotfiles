@@ -4,9 +4,9 @@ alias zshconfig="vim ~/.zshrc"
 alias zshsource="source ~/.zshrc"
 
 # networking
-alias ip="ipconfig getifaddr en0"
-alias wanip="curl -4s https://ident.me/ip"
-alias wanip6="curl -6s https://ident.me/ip"
+alias lanip="ifconfig en0 | sort | grep inet | grep -v deprecated"
+alias wanip="curl -4s https://ident.me/ip && echo"
+alias wanip6="curl -6s https://ident.me/ip && echo"
 
 # user commands
 alias grep='grep --color'
