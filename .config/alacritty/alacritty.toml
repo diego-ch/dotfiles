@@ -14,9 +14,9 @@ blink_interval = 500
 style = { blinking = "Always" }
 
 [window]
-dimensions = { columns = 160, lines = 25 }
+dimensions = { columns = 170, lines = 25 }
 padding = { x = 10, y = 10 }
-decorations = "buttonless"
+decorations = "Full"
 dynamic_title = true
 option_as_alt = "Both"
 
