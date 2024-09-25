@@ -10,10 +10,12 @@ alias wanip6="curl -6s https://ident.me/ip"
 
 # user commands
 alias grep='grep --color'
-alias ls="exa --icons --group-directories-first -F -H"
-alias ll="exa --icons --group-directories-first --long --header -lF"
-alias tree="exa --icons --group-directories-first --long --header -T"
-alias t="tree -I '.git' -a"
+alias ls="lsd"
+alias la="ls -a"
+alias ll="ls -l"
+alias lla="ls -la"
+alias lt="ls --tree"
+alias lta="lt -aI .git"
 
 # flecto-aliases
 alias flecto-local="docker exec -it backend-backend-1 bash"
