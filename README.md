@@ -14,7 +14,7 @@ Use homebrew to install the cli tools.
 ```
 brew install \
   commitzen \
-  exa \
+  lsd \
   git \
   gh \
   iperf3 \
@@ -37,10 +37,10 @@ brew install --cask \
   github \
   gitkraken \
   google-chrome \
-  iterm2 \
+  intellij-idea-ce \
+  kitty \
   notion \
   plex \
-  protonvpn \
   rectangle \
   slack \
   spotify \
@@ -57,6 +57,7 @@ brew install --cask \
   font-comic-mono \
   font-hack-nerd-font \
   font-jetbrains-mono-nerd-font \
+  font-mononoki-nerd-font \
   font-space-mono-nerd-font \
   font-victor-mono-nerd-font
 ```
