@@ -13,14 +13,17 @@ Ensure [Homebrew](https://brew.sh/) is installed on the machine.
 Use homebrew to install the cli tools.
 ```
 brew install \
+  asdf \
   commitzen \
   lsd \
-  git \
   gh \
+  git \
   iperf3 \
   jq \
-  starship \
+  lazygit \
+  scrcpy \
   stow \
+  yt-dlp \
   wget
 ```
 
