@@ -1,6 +1,7 @@
 [user]
 	name = Diego Porto
 	email = diego.cfporto@gmail.com
+	signingkey = ~/.ssh/github.key
 
 [init]
 	defaultBranch = main
@@ -10,6 +11,15 @@
 	diff = auto
 	interactive = auto
 	status = auto
+
+[commit]
+	gpgsign = true
+
+[core]
+	editor = nvim --clean
+
+[gpg]
+	format = ssh
 
 [pull]
 	rebase = true
@@ -21,13 +31,14 @@
 	prompt = false
 
 [alias]
-	c = commit
 	ca = commit -a
 	cm = commit -m
 	cam = commit -am
 	d = diff
 	dc = diff --cached
 	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	p = push
+	st = status
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -42,3 +53,6 @@
 [credential "https://gist.github.com"]
 	helper =
 	helper = !/opt/homebrew/bin/gh auth git-credential
+
+[url "ssh://git@github.com"]
+	insteadOf = "https://github.com"
