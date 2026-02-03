@@ -1,5 +1,6 @@
 {
   // editor settings ==>
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeLensFontFamily": "BlexMono Nerd Font Mono",
   "editor.fontFamily": "BlexMono Nerd Font Mono",
   "editor.fontLigatures": true,
@@ -66,56 +67,15 @@
     "editor.wordBasedSuggestions": "off"
   },
 
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features",
-    "editor.rulers": [120]
-  },
-
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[javascriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[json]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[jsonc]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[typescript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[typescriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "[dockercompose]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
   "[ruby]": {
-    // "editor.defaultFormatter": "Shopify.ruby-lsp",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.insertSpaces": true,
-    "editor.rulers": [120],
     "editor.semanticHighlighting.enabled": true,
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true
-  }
+    "files.trimFinalNewlines": true,
+  },
+
+  },
+
+  },
+
 }
