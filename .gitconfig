@@ -13,7 +13,7 @@
 	status = auto
 
 [commit]
-	gpgsign = true
+	gpgSign = true
 
 [core]
 	editor = nvim --clean
@@ -56,3 +56,5 @@
 
 [url "ssh://git@github.com"]
 	insteadOf = "https://github.com"
+[gpg "ssh"]
+	program = ssh-keygen
