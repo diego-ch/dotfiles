@@ -13,7 +13,7 @@ Ensure [Homebrew](https://brew.sh/) is installed on the machine.
 Use homebrew to install the cli tools.
 ```
 brew install \
-  asdf \
+  mise \
   commitzen \
   lsd \
   gh \
@@ -21,8 +21,10 @@ brew install \
   iperf3 \
   jq \
   lazygit \
+  neovim \
   scrcpy \
   stow \
+  tmux \
   yt-dlp \
   wget
 ```
@@ -41,6 +43,7 @@ brew install --cask \
   gitkraken \
   google-chrome \
   intellij-idea-ce \
+  iina \
   kitty \
   notion \
   plex \
@@ -48,21 +51,20 @@ brew install --cask \
   slack \
   spotify \
   stats \
-  visual-studio-code \
-  vlc
+  visual-studio-code
 ```
 
 ### 1.4 Fonts
 Install nerd fonts.
 ```
-brew tap homebrew/cask-fonts
 brew install --cask \
-  font-comic-mono \
+  font-blex-mono-nerd-font \
   font-hack-nerd-font \
   font-jetbrains-mono-nerd-font \
   font-mononoki-nerd-font \
   font-space-mono-nerd-font \
-  font-victor-mono-nerd-font
+  font-victor-mono-nerd-font \
+  font-zed-mono-nerd-font
 ```
 
 ### 1.5 Extras
@@ -73,6 +75,8 @@ brew install heroku
 
 brew tap teamookla/speedtest
 brew install speedtest
+
+brew install anomalyco/tap/opencode
 ```
 
 ## 2. Installation
