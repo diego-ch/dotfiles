@@ -1,0 +1,56 @@
+# terminal
+term = xterm-256color
+scrollback-limit = 4294967295
+
+# appearence
+theme = "Github Dark"
+
+# fonts
+font-family = "BlexMono Nerd Font Mono"
+font-size = 20
+font-thicken = true
+font-feature = -calt
+
+# options
+bold-is-bright = true
+clipboard-trim-trailing-spaces = true
+clipboard-paste-protection = false
+confirm-close-surface = false
+copy-on-select = clipboard
+mouse-hide-while-typing = true
+quit-after-last-window-closed = true
+link-url = true
+
+# cursor
+adjust-cursor-thickness = 2
+cursor-click-to-move = true
+cursor-style = block
+cursor-style-blink = true
+cursor-invert-fg-bg = true
+
+# window
+window-height = 20
+window-width = 120
+window-padding-balance = true
+window-padding-x = 4
+window-padding-y = 4
+window-vsync = true
+window-save-state = never
+window-inherit-font-size = true
+
+# macos
+macos-option-as-alt = true
+macos-secure-input-indication = false
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+macos-window-shadow = false
+
+# integrations
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+
+# keybind
+keybind = alt+'=new_split:right
+keybind = alt+-=new_split:down
+keybind = ctrl+r=reload_config
+keybind = shift+enter=text:\x1b\r
