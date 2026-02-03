@@ -15,7 +15,7 @@
   "editor.renderWhitespace": "none",
   "editor.renderLineHighlight": "all",
   "editor.scrollBeyondLastLine": true,
-  "editor.stickyScroll.enabled": false,
+  "editor.stickyScroll.enabled": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
 
