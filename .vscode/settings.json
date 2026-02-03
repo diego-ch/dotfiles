@@ -1,9 +1,10 @@
 {
   // editor settings ==>
-  "editor.codeLensFontFamily": "mononoki Nerd Font",
-  "editor.fontFamily": "mononoki Nerd Font",
+  "editor.codeLensFontFamily": "BlexMono Nerd Font Mono",
+  "editor.fontFamily": "BlexMono Nerd Font Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
+  "editor.fontWeight": "normal",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": false,
   "editor.formatOnType": true,
@@ -33,8 +34,8 @@
   },
 
   // terminal
-  "terminal.integrated.fontFamily": "mononoki Nerd Font",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "BlexMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 16,
 
   // workbench settings
   "workbench.colorTheme": "Catppuccin Mocha",
