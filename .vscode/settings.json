@@ -52,6 +52,8 @@
   "window.zoomLevel": 1,
 
   // extensions
+  "codesnap.shutterAction": "copy",
+  "gitlens.launchpad.indicator.enabled": false,
   "prettier.printWidth": 80,
   "prettier.singleQuote": true,
   "todo-tree.highlights.enabled": false,
@@ -94,9 +96,6 @@
     "codeLens": true,
   },
 
-  // extensions
-  "codesnap.shutterAction": "copy",
-  "gitlens.launchpad.indicator.enabled": false,
   },
 
 }
