@@ -10,6 +10,7 @@ flecto-fe:~/Work/flecto/frontend
 flecto-saas:~/Work/flecto/frontend/apps/saas
 flecto:~/Work/flecto
 porto-cti:~/Work/porto-cti
+projects:~/Work/porto-cti/repos/projects
 repos:~/Work/porto-cti/repos
 selfhosted:~/Work/porto-cti/repos/selfhosted
 socialtech:~/Work/socialtech
