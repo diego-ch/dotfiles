@@ -31,27 +31,27 @@
   // file settings
   "files.trimTrailingWhitespace": true,
   "files.associations": {
-    ".env*": "makefile"
+    ".env*": "makefile",
   },
 
   // terminal
   "terminal.integrated.fontFamily": "BlexMono Nerd Font Mono",
   "terminal.integrated.fontSize": 16,
+  "terminal.integrated.initialHint": false,
 
   // workbench settings
   "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
 
   // window
-  // "window.title": "${dirty}${separator}${activeFolderMedium}${separator}${activeEditorShort}",
   "window.title": "${dirty}${separator}${activeEditorMedium}",
   "window.zoomLevel": 1,
 
   // extensions
-  "github.copilot.editor.enableAutoCompletions": true,
   "prettier.printWidth": 80,
   "prettier.singleQuote": true,
   "todo-tree.highlights.enabled": false,
@@ -64,7 +64,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": "off"
+    "editor.wordBasedSuggestions": "off",
   },
 
   "[ruby]": {
