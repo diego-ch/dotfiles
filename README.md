@@ -15,7 +15,7 @@ Use homebrew to install the cli tools.
 brew install \
   mise \
   commitzen \
-  lsd \
+  eza \
   gh \
   git \
   iperf3 \
