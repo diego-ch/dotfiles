@@ -1,6 +1,8 @@
 # config files
 alias ghosttycfg="nvim ~/.config/ghostty/config"
+alias kittycfg="nvim ~/.config/kitty/kitty.conf"
 alias sshconfig="nvim ~/.ssh/config"
+alias tmuxconfig="nvim ~/.config/tmux/tmux.conf"
 alias zshconfig="nvim ~/.zshrc"
 alias zshaliases="nvim ~/.zsh/aliases.zsh"
 alias zshsource="source ~/.zshrc"
@@ -24,6 +26,7 @@ alias ll="ls -l"
 alias lla="ls -lA"
 alias lt="ls --tree"
 alias lta="lt -AI .git"
+alias lg="lazygit"
 
 # flecto-aliases
 alias flecto-dev="wd flecto-be; docker compose run --rm console-test"
@@ -32,6 +35,7 @@ alias flecto-prod="heroku run bash -a rnters-prod"
 alias flecto-staging="heroku run bash -a rnters-staging"
 
 # docker aliases
+alias dctstopall="docker stop $(docker ps -q)"
 alias dcctnrm='for docker_ctn in $(docker ps -aq); do docker rm -f $docker_ctn; done;'
 alias dcimgrm='for docker_img in $(docker images -aq); do docker rmi -f $docker_img; done;'
 alias dcvolrm='for docker_vol in $(docker volume ls -q); do docker volume rm $docker_vol; done;'
