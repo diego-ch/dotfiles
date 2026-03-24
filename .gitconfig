@@ -12,6 +12,12 @@
 	interactive = auto
 	status = auto
 
+[branch]
+  sort = -committerdate
+
+[tag]
+  sort = -version:refname
+
 [commit]
 	gpgSign = true
 
@@ -25,10 +31,12 @@
 	rebase = true
 
 [push]
-	default = simple
+  autoSetupRemote = true
 
-[difftool]
-	prompt = false
+[diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
 
 [alias]
 	ca = commit -a
@@ -39,6 +47,7 @@
 	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	p = push
 	st = status
+	wt = worktree
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -56,5 +65,6 @@
 
 [url "ssh://git@github.com"]
 	insteadOf = "https://github.com"
+
 [gpg "ssh"]
 	program = ssh-keygen
