@@ -21,6 +21,7 @@ brew install \
   git \
   iperf3 \
   jq \
+  lazydocker \
   lazygit \
   neovim \
   scrcpy \
