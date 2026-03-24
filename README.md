@@ -13,6 +13,7 @@ Ensure [Homebrew](https://brew.sh/) is installed on the machine.
 Use homebrew to install the cli tools.
 ```
 brew install \
+  btop \
   mise \
   commitzen \
   eza \
