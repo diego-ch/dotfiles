@@ -1,0 +1,7 @@
+# machine-local git config (see git/local.example, git/work.local.example)
+local
+work.local
+
+# editor / tooling scratch
+.claude/
+.DS_Store
