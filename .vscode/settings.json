@@ -1,10 +1,10 @@
 {
   // editor settings ==>
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeLensFontFamily": "BlexMono Nerd Font Mono",
-  "editor.fontFamily": "BlexMono Nerd Font Mono",
+  "editor.codeLensFontFamily": "OperatorMono Nerd Font",
+  "editor.fontFamily": "OperatorMono Nerd Font",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 18,
   "editor.fontWeight": "normal",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": false,
@@ -15,7 +15,6 @@
   "editor.renderWhitespace": "none",
   "editor.renderLineHighlight": "all",
   "editor.scrollBeyondLastLine": true,
-  "editor.stickyScroll.enabled": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
 
@@ -35,12 +34,11 @@
   },
 
   // terminal
-  "terminal.integrated.fontFamily": "BlexMono Nerd Font Mono",
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "OperatorMono Nerd Font",
+  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.fontSize": 18,
   "terminal.integrated.initialHint": false,
-
-  // workbench settings
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Panda Syntax",
   "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "catppuccin-mocha",
@@ -53,8 +51,11 @@
 
   // extensions
   "codesnap.shutterAction": "copy",
+  "gitlens.ai.model": "gitkraken",
+  "gitlens.ai.gitkraken.model": "gemini:gemini-2.5-flash",
   "gitlens.launchpad.indicator.enabled": false,
-  "prettier.printWidth": 80,
+  "prettier.experimentalTernaries": true,
+  "prettier.printWidth": 120,
   "prettier.singleQuote": true,
   "todo-tree.highlights.enabled": false,
 
@@ -67,6 +68,10 @@
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": "off",
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   "[ruby]": {
@@ -96,6 +101,20 @@
     "codeLens": true,
   },
 
+  // copilot
+  "chat.viewSessions.orientation": "stacked",
+  "github.copilot.editor.enableCodeActions": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.selectedCompletionModel": "",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
   },
 
+  // claude-code
+  "claudeCode.preferredLocation": "sidebar",
+  "claudeCode.selectedModel": "default",
+  }
 }
