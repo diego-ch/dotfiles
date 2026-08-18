@@ -12,8 +12,8 @@ fi
 # END_HOMEBREW_OPTIONS
 
 # BEGIN_CUSTOM_ALIASES
-for config in ~/.zsh/*.zsh; do
-    [ -f "$config" ] && source "$config"
+for config in ~/.zsh/*.zsh(N); do
+    source "$config"
 done
 unset config
 # END_CUSTOM_ALIASES
