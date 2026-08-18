@@ -3,14 +3,19 @@ term = xterm-256color
 scrollback-limit = 4294967295
 
 # appearence
-theme = "Adwaita Dark"
+theme = "TokyoNight"
 
 # fonts
+font-size = 14
 font-family = "OperatorMono Nerd Font"
-font-style = Normal
-font-size = 18
-font-thicken = false
-font-feature = -calt
+font-variation = wght=300
+font-variation = wdth=100
+font-family-bold = "Maple Mono NF"
+font-variation-bold = wght=800
+font-family-italic = "Maple Mono NF"
+font-variation-italic = wght=200
+font-family-bold-italic = "Maple Mono NF"
+font-variation-bold-italic = wght=800
 
 # options
 bold-is-bright = true
@@ -33,12 +38,12 @@ cursor-invert-fg-bg = true
 # window
 window-height = 20
 window-width = 120
-window-padding-balance = true
 window-padding-x = 14
 window-padding-y = 14
 window-vsync = true
 window-save-state = never
 window-inherit-font-size = true
+window-title-font-family = "Maple Mono NF"
 
 # macos
 macos-option-as-alt = true
