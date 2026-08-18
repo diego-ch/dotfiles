@@ -105,6 +105,12 @@ or only what the machine needs (e.g. a headless Linux box):
 stow git zsh tmux starship
 ```
 
+tmux plugins are managed by [tpm](https://github.com/tmux-plugins/tpm) —
+clone it once, then install with `prefix + I`:
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
 ## 3. Work git identity
 
 Routing and identity are machine-local and never committed. `~/.gitconfig`
