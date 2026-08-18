@@ -6,6 +6,10 @@
 [init]
 	defaultBranch = main
 
+#
+# view settings
+#
+
 [color]
 	branch = auto
 	diff = auto
@@ -13,30 +17,45 @@
 	status = auto
 
 [branch]
-  sort = -committerdate
+	sort = -committerdate
 
 [tag]
-  sort = -version:refname
+	sort = -version:refname
+
+#
+# commit settings
+#
 
 [commit]
 	gpgSign = true
 
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = ssh-keygen
+
+#
+# main settings
+#
+
 [core]
 	editor = nvim --clean
 
-[gpg]
-	format = ssh
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
 
 [pull]
 	rebase = true
 
 [push]
-  autoSetupRemote = true
+	autoSetupRemote = true
 
-[diff]
-  algorithm = histogram
-  colorMoved = plain
-  mnemonicPrefix = true
+#
+# command aliases
+#
 
 [alias]
 	ca = commit -a
@@ -55,6 +74,10 @@
 	process = git-lfs filter-process
 	required = true
 
+#
+# github overrides
+#
+
 [credential "https://github.com"]
 	helper =
 	helper = !/opt/homebrew/bin/gh auth git-credential
@@ -66,5 +89,10 @@
 [url "ssh://git@github.com"]
 	insteadOf = "https://github.com"
 
-[gpg "ssh"]
-	program = ssh-keygen
+#
+# work overrides
+#
+
+[includeIf "gitdir:~/Work/loop-os/"]
+	path = ~/Work/loop-os/gitconfig
+
