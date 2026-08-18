@@ -1,0 +1,13 @@
+# Template for ~/.config/git/local — machine-local git config, never
+# committed. Pulled in unconditionally by ~/.gitconfig, so anything here
+# (routing rules, machine quirks) stays out of the public repo.
+#
+#   mkdir -p ~/.config/git
+#   cp local.example ~/.config/git/local
+#   cp work.local.example ~/.config/git/work.local
+#   $EDITOR ~/.config/git/local ~/.config/git/work.local
+
+# Apply the work identity to any clone of the work remote, wherever it
+# lives on disk (git >= 2.36). Note: repos with no remote yet won't match.
+[includeIf "hasconfig:remote.*.url:git@git.example.com:your-org/**"]
+	path = ~/.config/git/work.local

@@ -1,0 +1,14 @@
+# Template for the work git identity.
+#
+# This file is a committed example. The real one is NOT tracked:
+#
+#   mkdir -p ~/.config/git
+#   cp ~/.dotfiles/git/work.local.example ~/.config/git/work.local
+#   $EDITOR ~/.config/git/work.local
+#
+# ~/.gitconfig pulls it in via includeIf for repos under ~/Work/loop-os/,
+# so anything set here overrides the personal defaults in that tree only.
+
+[user]
+	email = you@company.example
+	signingkey = ~/.ssh/work.key

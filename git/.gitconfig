@@ -80,19 +80,22 @@
 
 [credential "https://github.com"]
 	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
+	helper = !gh auth git-credential
 
 [credential "https://gist.github.com"]
 	helper =
-	helper = !/opt/homebrew/bin/gh auth git-credential
+	helper = !gh auth git-credential
 
 [url "ssh://git@github.com"]
 	insteadOf = "https://github.com"
 
 #
-# work overrides
+# machine-local overrides
+#
+# ~/.config/git/local is NOT tracked here. It routes work repos to a
+# work identity per machine. See git/local.example and README section 3.
 #
 
-[includeIf "gitdir:~/Work/loop-os/"]
-	path = ~/Work/loop-os/gitconfig
+[include]
+	path = ~/.config/git/local
 
