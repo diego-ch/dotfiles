@@ -17,7 +17,7 @@ Use homebrew to install the cli tools.
 brew install \
   btop \
   mise \
-  commitzen \
+  commitizen \
   eza \
   gh \
   git \
