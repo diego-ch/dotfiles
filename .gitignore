@@ -2,6 +2,9 @@
 local
 work.local
 
+# tpm clones plugins here if stow folds ~/.config/tmux into the repo
+tmux/.config/tmux/plugins/
+
 # editor / tooling scratch
 .claude/
 .DS_Store
