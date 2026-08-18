@@ -24,3 +24,14 @@ alias ktheme="kitty +kitten themes"
 alias wanip="curl -4s https://ident.me/ip && echo"
 alias wanip6="curl -6s https://ident.me/ip && echo"
 alias speedtest-best="speedtest -s 46129"
+
+#
+# platform specific aliases
+case $(uname) in
+Darwin)
+    # macOS commands
+    ;;
+Linux)
+    # fedora aliases
+    ;;
+esac
