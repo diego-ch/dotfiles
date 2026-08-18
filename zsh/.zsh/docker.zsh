@@ -1,26 +1,32 @@
 #
 # docker aliases
 #
+# xargs -r keeps these no-ops when nothing matches, instead of calling
+# docker with no arguments.
 
-alias dctstopall='docker stop $(docker ps -q)'
-alias dcctnrm='for docker_ctn in $(docker ps -aq); do docker rm -f $docker_ctn; done;'
-alias dcimgrm='for docker_img in $(docker images -aq); do docker rmi -f $docker_img; done;'
-alias dcvolrm='for docker_vol in $(docker volume ls -q); do docker volume rm $docker_vol; done;'
-alias dcps='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Image}}\t{{.Command}}"'
+alias dkps='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Image}}\t{{.Command}}"'
+alias dkstopall='docker ps -q | xargs -r docker stop'
+alias dkctnrm='docker ps -aq | xargs -r docker rm -f'
+alias dkimgrm='docker images -aq | xargs -r docker rmi -f'
+alias dkvolrm='docker volume ls -q | xargs -r docker volume rm'
 
-dockerpurge() {
-    # show pre stats
-    docker system df
+# Full teardown: removes running containers and in-use volumes too, which
+# `docker system prune` leaves alone.
+dkpurge() {
+    docker system df || return 1
     echo
 
-    # purge docker
-    dcctnrm
-    dcimgrm
-    dcvolrm
-    docker network prune -f
+    if ! read -q "REPLY?Remove ALL containers, images and volumes? [y/N] "; then
+        echo "\naborted"
+        return 1
+    fi
+    echo
+
+    dkctnrm
+    dkimgrm
+    dkvolrm
     docker system prune -af
 
-    # show post stats
     echo
     docker system df
 }
