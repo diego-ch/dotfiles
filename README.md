@@ -19,6 +19,8 @@ brew install \
   mise \
   commitizen \
   eza \
+  fd \
+  fzf \
   gh \
   git \
   iperf3 \
