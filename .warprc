@@ -5,10 +5,9 @@ ex-java:~/Work/porto-cti/repos/exercises/java
 ex-kotlin:~/Work/porto-cti/repos/exercises/kotlin
 ex-ruby:~/Work/porto-cti/repos/exercises/ruby
 exercises:~/Work/porto-cti/repos/exercises
-flecto-be:~/Work/flecto/backend
-flecto-fe:~/Work/flecto/frontend
-flecto-saas:~/Work/flecto/frontend/apps/saas
 flecto:~/Work/flecto
+lab:~/Work/porto-cti/repos/portolab
+loop:~/Work/loopOS
 porto-cti:~/Work/porto-cti
 projects:~/Work/porto-cti/repos/projects
 repos:~/Work/porto-cti/repos
