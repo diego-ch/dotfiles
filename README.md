@@ -1,9 +1,11 @@
 # dotfiles
-This repository contains my config files for git, terminal, IDEs and etc...
+
+Config files for git, shell, terminals and editors, managed with [GNU Stow](https://www.gnu.org/software/stow/).
+Each top-level directory is a stow package that mirrors `$HOME`.
 
 ## 1. Requirements
 
-### 1.1 Homebrew
+### 1.1 Homebrew (macOS)
 Ensure [Homebrew](https://brew.sh/) is installed on the machine.
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -24,11 +26,13 @@ brew install \
   lazydocker \
   lazygit \
   neovim \
+  ripgrep \
   scrcpy \
   stow \
   tmux \
   yt-dlp \
-  wget
+  wget \
+  zsh-autosuggestions
 ```
 
 ### 1.3 Apps
@@ -37,6 +41,7 @@ Use homebrew to install apps.
 brew install --cask \
   android-studio \
   bitwarden \
+  cursor \
   discord \
   docker \
   figma \
@@ -83,13 +88,30 @@ brew install anomalyco/tap/opencode
 
 ## 2. Installation
 
-Clone the git repository to your home directory:
+Clone the repository (any path works, `.stowrc` targets `$HOME`):
 ```
 git clone https://github.com/diego-ch/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
 ```
 
-then use STOW to create the symlinks:
+then stow everything:
 ```
-cd ~/.dotfiles
-stow --adopt .
+stow */
+```
+
+or only what the machine needs (e.g. a headless Linux box):
+```
+stow git zsh tmux starship
+```
+
+## 3. Work git identity
+
+Routing and identity are machine-local and never committed. `~/.gitconfig`
+includes `~/.config/git/local`, which routes work repos (matched by remote
+or directory) to the identity in `~/.config/git/work.local`:
+```
+mkdir -p ~/.config/git
+cp git/local.example ~/.config/git/local
+cp git/work.local.example ~/.config/git/work.local
+$EDITOR ~/.config/git/local ~/.config/git/work.local
 ```
