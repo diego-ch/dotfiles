@@ -52,6 +52,7 @@ brew install --cask \
   intellij-idea-ce \
   iina \
   kitty \
+  lm-studio \
   notion \
   plex \
   rectangle \
