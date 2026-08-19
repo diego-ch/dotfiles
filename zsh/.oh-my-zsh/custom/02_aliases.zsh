@@ -6,7 +6,7 @@ alias ssh-config="$EDITOR ~/.ssh/config"
 #
 # zsh config
 alias omz-config="$EDITOR ~/.zshrc"
-alias omz-custom="$EDITOR $ZSH/custom"
+alias omz-custom="$EDITOR $ZSH_CUSTOM"
 
 #
 # terminal config
