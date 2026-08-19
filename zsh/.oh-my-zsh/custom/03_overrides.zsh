@@ -13,3 +13,7 @@ fi
 if command -v rg >/dev/null 2>&1; then
     alias grep='rg'
 fi
+
+if command -v wd >/dev/null 2>&1; then
+    export WD_CONFIG=$HOME/.config/wd/warprc
+fi
