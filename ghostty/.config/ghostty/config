@@ -57,7 +57,7 @@ shell-integration = zsh
 shell-integration-features = cursor,sudo,title,ssh-env
 
 # keybind
-keybind = alt+'=new_split:right
+keybind = alt+\=new_split:right
 keybind = alt+-=new_split:down
 keybind = ctrl+r=reload_config
 keybind = shift+enter=text:\x1b\r
