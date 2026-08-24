@@ -4,6 +4,7 @@
 # xargs -r keeps these no-ops when nothing matches, instead of calling
 # docker with no arguments.
 
+alias dkc='docker compose'
 alias dkps='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Image}}\t{{.Command}}"'
 alias dkstopall='docker ps -q | xargs -r docker stop'
 alias dkctnrm='docker ps -aq | xargs -r docker rm -f'
