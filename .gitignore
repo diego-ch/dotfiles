@@ -6,5 +6,5 @@ work.local
 tmux/.config/tmux/plugins/
 
 # editor / tooling scratch
-.claude/
+/.claude/
 .DS_Store

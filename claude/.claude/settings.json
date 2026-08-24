@@ -1,0 +1,10 @@
+{
+  "includeCoAuthoredBy": false,
+  "model": "sonnet",
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "medium",
+  "tui": "fullscreen",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark",
+  "autoCompactEnabled": false
+}
