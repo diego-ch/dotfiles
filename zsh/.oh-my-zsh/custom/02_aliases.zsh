@@ -35,6 +35,7 @@ export SPD_NYC=64881
 case $(uname) in
 Darwin)
     # macOS commands
+    alias myip='ifconfig | awk '\''/^[a-z]/{i=$1} /inet6? /{if ($2 !~ /^(fe80|::1|127\.)/) print i, $1, $2}'\'''
     ;;
 Linux)
     # fedora aliases
