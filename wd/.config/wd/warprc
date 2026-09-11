@@ -7,7 +7,9 @@ ex-ruby:~/Work/porto-cti/repos/exercises/ruby
 exercises:~/Work/porto-cti/repos/exercises
 flecto:~/Work/flecto
 lab:~/Work/porto-cti/repos/portolab
-loop:~/Work/loopOS
+loop:~/Work/loop-os
+loopw:~/Work/loop-os/workspace
+mpibrasil:~/Work/socialtech/repos/mpibrasil-workspace
 porto-cti:~/Work/porto-cti
 projects:~/Work/porto-cti/repos/projects
 repos:~/Work/porto-cti/repos
