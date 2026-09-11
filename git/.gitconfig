@@ -1,7 +1,7 @@
 [user]
 	name = Diego Porto
 	email = diego.cfporto@gmail.com
-	signingkey = ~/.ssh/github.key
+	signingKey = ~/.ssh/github.key
 
 [init]
 	defaultBranch = main
@@ -21,6 +21,7 @@
 
 [tag]
 	sort = -version:refname
+	forceSignAnnotated = false
 
 #
 # commit settings
@@ -31,9 +32,11 @@
 
 [gpg]
 	format = ssh
+	program = gpg
 
 [gpg "ssh"]
 	program = ssh-keygen
+	allowedSignersFile =
 
 #
 # main settings
