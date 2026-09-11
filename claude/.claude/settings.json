@@ -4,10 +4,14 @@
   },
   "includeCoAuthoredBy": false,
   "model": "sonnet",
+  "enabledPlugins": {
+    "ruby-lsp@claude-plugins-official": true
+  },
   "alwaysThinkingEnabled": true,
   "effortLevel": "medium",
   "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark",
-  "autoCompactEnabled": false
+  "autoCompactEnabled": false,
+  "agentPushNotifEnabled": true
 }
