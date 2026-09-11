@@ -1,4 +1,7 @@
 {
+  "enabledPlugins": {
+    "ruby-lsp@claude-plugins-official": true,
+  },
   "includeCoAuthoredBy": false,
   "model": "sonnet",
   "alwaysThinkingEnabled": true,
